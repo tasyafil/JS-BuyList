@@ -1,14 +1,79 @@
 <!DOCTYPE html>
-<html>
-<head lang="uk">
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
     <meta charset="UTF-8">
-    <title>My Page</title>
-
-
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>BuyList</title>
 </head>
 <body>
-<h1>Hello World</h1>
-<p>Hello Git</p>
+<style>
+    body{
+        background-color: lightgrey;}
+</style>
+<div class="badge">BuyList <br> Created by <br>Fil Anastasiia</div>
+<div class="center">
+<div class="left">
+    <input type="text" id="fname" name="firstname" placeholder="Назва товару">
+
+    <button class="addbutton" data-tooltip="Create goods"> <b>Додати </b></button>
+
+    <p class="goodslist">
+        Помідори
+        <button class="Minusbutton"data-tooltip="Delete item">-</button>
+        <span class="amount">1</span>
+        <span class="tooltip" data-tooltip="tooltip">
+            <button class="Plusbutton"data-tooltip="Add goods">+</button></span>
+        <button class="Buybutton"data-tooltip="Item is bought">Куплено</button>
+        <button class="Xbutton"data-tooltip="Cross out item">x</button>
+    </p>
+
+    <hr style = "width:100%; height:2px; background-color:lightgrey; border:none;" />
+    <p class="goodslist">
+        Печиво
+        <button class="Minusbutton"data-tooltip="Delete item">-</button>
+        <span class="amount">1</span>
+        <button class="Plusbutton"data-tooltip="Add goods">+</button>
+    <button class="Buybutton"data-tooltip="Item is bought">Куплено</button>
+    <button class="Xbutton"data-tooltip="Cross out item">x</button>
+</p>
+    <hr style = "width:100%; height:2px; background-color:lightgrey; border:none;" />
+    <p class="goodslist">Сир
+        <button class="Minusbutton"data-tooltip="Delete item">-</button>
+        <span class="amount">1</span>
+        <button class="Plusbutton"data-tooltip="Add goods">+</button>
+        <button class="Buybutton"data-tooltip="Item is bought">Куплено</button>
+        <button class="Xbutton"data-tooltip="Cross out item">x</button>
+    </p>
+
+
+
+</div>
+<div class = "right">
+    <div class = "headings">
+        <h3>Залишилося</h3>
+    </div>
+
+    <hr style = "width:100%; height:2px; background-color:lightgrey; border:none;" />
+
+    <h6><span>Помідори
+    <div class = "circle">1</div>
+    </span></h6>
+    <h6><span>Печиво
+        <div class = "circle">1</div>
+    </span></h6>
+    <h6><span>Сир
+    <div class = "circle">1</div>
+    </span></h6>
+
+    <hr style = "width:100%; height:2px; background-color:lightgrey; border:none;" />
+    <div class = "headings">
+        <h3> Куплено</h3>
+    </div>
+    <hr style = "width:100%; height:2px; background-color:lightgrey; border:none;" />
+
+</div>
+
+</div>
+
 </body>
 </html>
