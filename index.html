@@ -1,93 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css"
-             href="main.css"/>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>BuyList</title>
 </head>
 <body>
-<div class="container">
-    <div class="center">
-        <!-- спочатку елементи з float -->
-        <div class="right">
-            <div class="title"><b>Залишилося</b></div>
-            <div class="goodsleft">
-                <span class="good1 good"><span class="listgoodname">помідори</span><span class="quantitycircle">2</span></span>
-                <span class="good2 good"><span class="listgoodname">печиво</span><span class="quantitycircle">2</span></span>
-                <span class="good3 good"><span class="listgoodname">сир</span><span class="quantitycircle">1</span></span>
+<style>
+    body{
+        background-color: lightgrey;}
+</style>
+<div class="badge">BuyList <br> Created by <br>Fil Anastasiia</div>
+<div class="center">
+<div class="left">
+    <input type="text" id="fname" name="firstname" placeholder="Назва товару">
 
-            </div>
+    <button class="addbutton" data-tooltip="Create goods"> <b>Додати </b></button>
 
-            <div class="boughttitle"><b>Куплено</b></div>
-        </div>
-        <!-- потім fluid едементи без float -->
-        <div class="left">
-            <div id="inputform">
-            <input id="goodname" type="text"  placeholder="Назва товару">
-            <button id="add" data-tooltip="Додати товар" >
-                Додати
-            </button>
-            </div>
+    <p class="goodslist">
+        Помідори
+        <button class="Minusbutton"data-tooltip="Delete item">-</button>
+        <span class="amount">1</span>
+        <span class="tooltip" data-tooltip="tooltip">
+            <button class="Plusbutton"data-tooltip="Add goods">+</button></span>
+        <button class="Buybutton"data-tooltip="Item is bought">Куплено</button>
+        <button class="Xbutton"data-tooltip="Cross out item">x</button>
+    </p>
 
-            <div class="tovar tovar1">
-               <div class="goodname">Помідори
-               </div>
-                <div class="midbuttons">
-                <button class="1- minus"  data-tooltip="Зменшити кількість">
-                    -
-                </button>
-                <span class="quantity">
-                    2
-                </span>
-                <button class="1+ plus" data-tooltip="Збільшити кількість">+</button>
-                </div>
+    <hr style = "width:100%; height:2px; background-color:lightgrey; border:none;" />
+    <p class="goodslist">
+        Печиво
+        <button class="Minusbutton"data-tooltip="Delete item">-</button>
+        <span class="amount">1</span>
+        <button class="Plusbutton"data-tooltip="Add goods">+</button>
+    <button class="Buybutton"data-tooltip="Item is bought">Куплено</button>
+    <button class="Xbutton"data-tooltip="Cross out item">x</button>
+</p>
+    <hr style = "width:100%; height:2px; background-color:lightgrey; border:none;" />
+    <p class="goodslist">Сир
+        <button class="Minusbutton"data-tooltip="Delete item">-</button>
+        <span class="amount">1</span>
+        <button class="Plusbutton"data-tooltip="Add goods">+</button>
+        <button class="Buybutton"data-tooltip="Item is bought">Куплено</button>
+        <button class="Xbutton"data-tooltip="Cross out item">x</button>
+    </p>
 
-                <button class="bought" data-tooltip="Товар розкуплено">Куплено</button>
 
-                <button class="delete" data-tooltip="Видалити товар">x</button>
-            </div>
-            <div class="tovar tovar2">
-                <div class="goodname"> Печиво</div>
-                <div class="midbuttons">
-                <button class="2- minus"  data-tooltip="Зменшити кількість">
-                    -
-                </button>
-                <span class="quantity">
-                    2
-                </span>
-                <button class="2+ plus" data-tooltip="Збільшити кількість">+</button>
-                </div>
 
-                <button class="bought"  data-tooltip="Товар розкуплено">Куплено</button>
-
-                <button class="delete" data-tooltip="Видалити товар">x</button>
-            </div>
-            <div class="tovar tovar3">
-                <div class="goodname">Сир</div>
-                <div class="midbuttons">
-
-                <button class="3- minus"  data-tooltip="Зменшити кількість">
-                    -
-                </button>
-                <span class="quantity">
-                    1
-                </span>
-                <button class="3+ plus" data-tooltip="Збільшити кількість">+</button>
-                </div>
-
-                <button class="bought" data-tooltip="Товар розкуплено">Куплено</button>
-
-                <button class="delete" data-tooltip="Видалити товар">x</button>
-            </div>
-        </div>
-    </div>
 </div>
-<div id="badge">
-    <h1>Buy List</h1>
-<span id="crby">Created by:</span>
-<h3>Anastasia</h3></div>
+<div class = "right">
+    <div class = "headings">
+        <h3>Залишилося</h3>
+    </div>
 
+    <hr style = "width:100%; height:2px; background-color:lightgrey; border:none;" />
+
+    <h6><span>Помідори
+    <div class = "circle">1</div>
+    </span></h6>
+    <h6><span>Печиво
+        <div class = "circle">1</div>
+    </span></h6>
+    <h6><span>Сир
+    <div class = "circle">1</div>
+    </span></h6>
+
+    <hr style = "width:100%; height:2px; background-color:lightgrey; border:none;" />
+    <div class = "headings">
+        <h3> Куплено</h3>
+    </div>
+    <hr style = "width:100%; height:2px; background-color:lightgrey; border:none;" />
+
+</div>
+
+</div>
 
 </body>
 </html>
