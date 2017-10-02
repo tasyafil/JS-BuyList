@@ -1,244 +1,190 @@
-КМА Настя, [02.10.17 23:54]
-*{
-    font-family: Corbel, sans-serif;
-
-}
-body{
-    background: rgba(0, 0, 0, 0.13);
-}
-.container {
-
-    width: 100%;
-}
 .center {
-
     width: 100%;
-    /*Вирівнює елемент по центру*/
     margin: auto;
-    padding-top: 100px;
-    /*Ширина екрану після якої з’являться
-    поля*/
-    max-width: 1000px;
-    min-width: 400px;
-}
-.left {
-
-    width: 500px;
-    border-radius: .28571429rem;
-    background-color: #fff;
-    padding: 1px;
-    border:solid ;
-    border-color:rgba(0,0,0,0.16);
-    float:left;
-    padding-left: 0;
-    padding-right: 0;
+    max-width: 500px;
 }
 .right {
-    width: 400px;
-    background-color: #fff;
-
-    padding: 1px;
-    padding-left: 0;
-    padding-right: 0;
-    border-radius: .28571429rem;
-    border:inherit ;
-    border-color:rgba(0,0,0,0.16);
+    width:320px;
+    height: 200px;
+    position: absolute;
+    right: 170px;
+    top: 90px;
+    background-color: white;
     float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px #888888;
+
+
+}
+.left {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 680px;
+    height:130px;
+    position: absolute;
+    left: 150px;
+    top: 90px;
+    background-color:white;
+    padding:50px 10px 30px 10px;
+    border-radius: 4px;
+    float: left;
+    box-shadow: 5px 5px 5px #888888;
 
 }
 
-#inputform{
-margin:0;
-
-    margin-bottom:0;
-    height:50%;
-    padding:15px;
-
+.addbutton {
+    float: right;
+    background-color: royalblue;
+    border:10px;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    margin-top: -1cm;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 -0.3em 0 0 rgba(34,36,38,.15) inset;
 }
-#goodname{
 
+input[type=text]{
+    margin-top: -1cm;
     width: 80%;
+    float: left;
+    padding: 12px 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+h6{
+    display:inline;
+    border-radius: 4px;
+    background-color:lightgrey;
+    color: #737373;
+    margin-left:10px;
     padding:5px;
 }
 
-button{
-    color:#D281BC;
-    cursor: pointer;
-    background-color: #2185D0;
-    color: #FFF;
-    padding:6px;
-
-    border-style:hidden ;
-}
-#add{
-    cursor: pointer;
-    background-color: #2185D0;
-    color: #FFF;
-    padding:6px;
-    border-bottom-right-radius: .28571429rem;
-    border-top-right-radius: .28571429rem;
-    width: 16%;
-    border-style:hidden ;
-    margin:0;
-}
-button::after {
-    background:#D281BC;
-    border-radius: 8px 8px 8px 8px;
-    color: #FFF;
-    content: attr(data-tooltip);
-    opacity: 0;
+.amount{
+    border-radius: 4px;
+    background-color:lightgrey;
+    color: #737373;
+    padding:5px;
+    font-size:13px;
+    right:51%;
     position: absolute;
-    visibility: hidden; /* ...и скрыт. */
-    z-index: 3;
-
-    transition: all 0.4s  ease-in-out; /* Добавить плавности по вкусу */
 }
 
-button:hover::after {
-
-    padding: 3px 7px;
-    margin-top: -24px;
-    opacity: 1; /* Показываем его */
-    visibility: visible;
-}
-.tovar{
-
-    padding:10px;
-    position:relative;
-    border: 0.05em solid rgba(0, 0, 0, 0.19);
-}
-.tovar3{
-    border-bottom-right-radius:  .28571429rem;
-
-    border-bottom-left-radius:  .28571429rem;
-}
-button{
-
-    font-weight: bold;
-    border-radius: .28571429rem;
-}
-button.delete{
-    position: absolute;
-    right: 10px;
-    padding:8px;
-    font-weight: bold;
-    font-size: 15px;
-    background-color: rgba(255,7,0,0.61);
-    width: 30px;
-    height: 30px;
-}
-.goodname{
-    display: inline-block;
-    width: 40%;
-
-}
-.midbuttons{
-    display: inline-block;
-}
-.minus{
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    background-color: rgba(255,7,0,0.61);
-
-}
-.plus{
-    width: 30px;
-    height: 30px;
-
-    background-color: rgba(70, 237, 105, 0.61);
-    border-radius: 100%;
-}
-.quantity{
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.12);
-    width: 19.333px;
+#outer
+{
+    width:100%;
     text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-
-    border-radius: .28571429rem;
 }
-   button.bought{
-    position: absolute;
-    right:50px;
-
-
-}
-
-.title{
-    padding:15px;
-    border-bottom: solid;
-    border-width: medium;
-    border-color:rgba(0,0,0,0.16);
-
-}
-.goodsleft{
-    padding: 20px;
-}
-.good{
-    font-size: 13px;
-    padding: 5px;
+.inner
+{
     display: inline-block;
-    margin-right: 10px;
-    margin-top: 5px;
-    background-color: rgba(0, 0, 0, 0.12);
-    border-radius: .28571429rem;
+}
+.headings {
+    padding-left: 15px ;
+}
 
-}
-.listgoodname{
-
-}
-.quantitycircle{
-    display:inline-block;
-width:16px;
-    text-align: center;
-    background-color: rgba(255, 183, 64, 0.85);
-    margin-left: 3px;
-padding:3px;
-    border-radius: 100%;
-    font-weight: bold;
-    color: #FFFFFF;
-}
-.boughttitle{
-    padding: 15px;
-
-    border-top: solid;
-    border-width: medium;
-    border-color:rgba(0,0,0,0.16);
-}
-*{
-    font-family: Corbel, sans-serif;
-color: #000;
-}
-#badge {
-    position: fixed;
-
-    text-align: center;
-
-    background-color: #D281BC;
-    padding: 0 30px 30px 30px;
-    border-radius:.4rem ;
-    bottom: -120px;
-    left:100px;
-    transition: all 1s ease;
-}
-#badge:hover{
-    background-color: #36a9dc;
-    bottom: -10px;
-}
 h1{
-    color: #FFFFFF;
+    box-sizing: border-box;
+    display: inline-block;
 
 }
 
-h3{
+.circle{
+    padding-left:4px;
+    padding-right:4px;
+    display:inline;
+    border-radius: 50%;
+    background-color:darkorange;
+    color:white;
+    text-align:center;
 
-    color: #FFFFFF;
 }
-#crby{
+.goodslist {
+    position: relative;
+}
+.Xbutton {
+    font-weight:900;
+    width:30px;
+    height:30px;
+    background-color: #dc251d;
+    color:white;
+    text-decoration:none;
+    border:none;
+    position: absolute;
+    right:0;
+    transition:0.2s;
+    box-shadow: 0 -0.3em 0 0 rgba(34,36,38,.15) inset;
+    border-radius: 4px;
 
-    color: #FFFFFF;
+}
+.Buybutton {
+    font-size: 13px;
+    width:90px;
+    height:30px;
+    background-color: lightgrey;
+    color: #575757;
+    text-decoration:none;
+    border:none;
+    position: absolute;
+    right:38px;
+    border-radius: 4px;
+    box-shadow: 0 -0.3em 0 0 rgba(34,36,38,.15) inset;
+
+}
+.Plusbutton {
+    right:45%;
+    width:30px;
+    height:30px;
+    background-color:  green;
+    color: white;
+    text-decoration:none;
+    position: absolute;
+    border:none;
+    border-radius: 50%;
+    box-shadow: 0 -0.3em 0 0 rgba(34,36,38,.15) inset;
+
+}
+
+.Minusbutton {
+    right:55%;
+    width:30px;
+    height:30px;
+    background-color:  #dc251d;
+    color: white;
+    text-decoration:none;
+    border:none;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 -0.3em 0 0 rgba(34,36,38,.15) inset;
+
+}
+.badge{
+    top:620px;
+    left:10px;
+    padding-top:10px;
+    width: 150px;
+    height: 100px;
+    background-color: rebeccapurple;
+    position: relative;
+    animation-duration: 4s;
+    border-radius: 6px;
+    Color:white;
+    Text-align:center;
+}
+.badge:hover{
+    animation-name: anim;
+}
+@keyframes anim {
+    100% {background-color:cornflowerblue; top:560px;}
 }
 
 @media print {
@@ -249,38 +195,49 @@ h3{
         bottom: -50px;
 
     }
-
-    h1 {
-        display: none;
-
+}
+button::after {
+    width:100px;
+    top:-25px;
+    right:5px;
+    background:rebeccapurple;
+    border-radius:8px;
+    color: white;
+    content: attr(data-tooltip);
+    opacity: 0;
+    padding: 5px 7px;
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
 }
 
-    h3, #crby {
-        color: black;
-        display: inline-block;
-    }
+button:hover::after {
+    opacity: 1;
+    visibility: visible;
 }
 
-    @media (max-width: 920px) {
-        .right {
-            width: 300px;
-        }
 
-    }
-@media (max-width: 820px) {
-    .right {
-        width: 200px;
-    }
 
-}
-    @media (max-width: 720px) {
-        .right {
-            width: 100%;
-        }
 
-        .left {
-            width: 100%;
-            margin-top: 10px;
-        }
 
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
