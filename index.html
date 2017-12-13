@@ -1,79 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="main.css"/>
+<html>
+<head lang="uk">
     <meta charset="UTF-8">
-    <title>BuyList</title>
+    <title>My Buylist</title>
+
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-<style>
-    body{
-        background-color: lightgrey;}
-</style>
-<div class="badge">BuyList <br> Created by <br>Fil Anastasiia</div>
-<div class="center">
-<div class="left">
-    <input type="text" id="fname" name="firstname" placeholder="Назва товару">
+<div class="main-container">
+    <div class="grid">
+        <div class="left">
+            <div class="item-list">
+                <div class="findItem">
+                    <span class="input-item">
+                        <input class="new-item" type="text" id="wname"
+                               placeholder="Додати товар..">
+                        <button class="add">
+                            <span class="tooltiptext"><b>New good</b></span>
+                            <b>Додати</b></button>
+                    </span>
+                </div>
+                <div class="item-row">
+                    <div class="inner-grid">
+                        <div class="name-section">
+                            <input class="edit" type="text">
+                            <span class="not-bought">Помідори</span>
+                        </div>
+                        <div class="first-buttons">
+                            <button class="minus-button">
+                                <span class="tooltiptext"><b>Minus one</b></span>
+                                <i class="minus-icon">
+                                    <b>-</b>
+                                </i>
+                            </button>
+                            <span class="count-label">1</span>
+                            <button class="plus-button">
+                                <span class="tooltiptext"><b>Plus one</b></span>
+                                <i class="plus-icon">
+                                    <b>+</b>
+                                </i>
+                            </button>
+                        </div>
+                        <div class="last-buttons">
+                            <button class="buy-button">Куплено
+                                <span class="tooltiptext"><b>Bought</b></span>
+                            </button>
+                            <button class="delete-button">
+                                <span class="tooltiptext"><b>Delete</b></span>
+                                <i class="remove-icon">
+                                    <b>x</b>
+                                </i>
+                            </button>
+                            <button class="unbuy-button">
+                                <span class="tooltiptext"><b>Cancel buying</b></span>
+                                <i class="remove-icon">
+                                    <b>Не куплено</b>
+                                </i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bought-column">
+            <div class="segment-holder">
+                <div class="remain">
+                    <h1>Залишилося</h1>
+                </div>
+                <div class="segment">
+                    <div class="stats">
+                        <span class="stats-label">
+                            <span class="title">Помідори</span>
+                            <span class="count-label2">1</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="bought">
+                    <h1>Куплено</h1>
+                </div>
+                <div class="stats-bought">
 
-    <button class="addbutton" data-tooltip="Create goods"> <b>Додати </b></button>
-
-    <p class="goodslist">
-        Помідори
-        <button class="Minusbutton"data-tooltip="Delete item">-</button>
-        <span class="amount">1</span>
-        <span class="tooltip" data-tooltip="tooltip">
-            <button class="Plusbutton"data-tooltip="Add goods">+</button></span>
-        <button class="Buybutton"data-tooltip="Item is bought">Куплено</button>
-        <button class="Xbutton"data-tooltip="Cross out item">x</button>
-    </p>
-
-    <hr style = "width:100%; height:2px; background-color:lightgrey; border:none;" />
-    <p class="goodslist">
-        Печиво
-        <button class="Minusbutton"data-tooltip="Delete item">-</button>
-        <span class="amount">1</span>
-        <button class="Plusbutton"data-tooltip="Add goods">+</button>
-    <button class="Buybutton"data-tooltip="Item is bought">Куплено</button>
-    <button class="Xbutton"data-tooltip="Cross out item">x</button>
-</p>
-    <hr style = "width:100%; height:2px; background-color:lightgrey; border:none;" />
-    <p class="goodslist">Сир
-        <button class="Minusbutton"data-tooltip="Delete item">-</button>
-        <span class="amount">1</span>
-        <button class="Plusbutton"data-tooltip="Add goods">+</button>
-        <button class="Buybutton"data-tooltip="Item is bought">Куплено</button>
-        <button class="Xbutton"data-tooltip="Cross out item">x</button>
-    </p>
-
-
-
-</div>
-<div class = "right">
-    <div class = "headings">
-        <h3>Залишилося</h3>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <hr style = "width:100%; height:2px; background-color:lightgrey; border:none;" />
-
-    <h6><span>Помідори
-    <div class = "circle">1</div>
-    </span></h6>
-    <h6><span>Печиво
-        <div class = "circle">1</div>
-    </span></h6>
-    <h6><span>Сир
-    <div class = "circle">1</div>
-    </span></h6>
-
-    <hr style = "width:100%; height:2px; background-color:lightgrey; border:none;" />
-    <div class = "headings">
-        <h3> Куплено</h3>
-    </div>
-    <hr style = "width:100%; height:2px; background-color:lightgrey; border:none;" />
-
+</div>
+<!---->
+<!---->
+<div class="badge">
+    <span class="name"><b>Buy List</b></span>
+    <div class="creator">Created by <br>Fil Anastasiia</div>
+    </span>
 </div>
 
-</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js">
+</script>
+<script type="text/javascript" src="main.js"> </script>
 
 </body>
 </html>
