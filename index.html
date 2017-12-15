@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="uk">
+    <meta charset="UTF-8">
+    <title>My Buylist</title>
+
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+<div class="main-container">
+    <div class="grid">
+        <div class="left">
+            <div class="item-list">
+                <div class="findItem">
+                    <span class="input-item">
+                        <input class="new-item" type="text" id="wname"
+                               placeholder="Додати товар..">
+                        <button class="addButton">
+                            <span class="tooltiptext"><b>New good</b></span>
+                            <b>Додати</b></button>
+                    </span>
+                </div>
+                <div class="item-row">
+                    <div class="inner-grid">
+                        <div class="name-section">
+                            <input class="edit" type="text">
+                            <span class="not-bought">Помідори</span>
+                        </div>
+                        <div class="first-buttons">
+                            <button class="minus-button">
+                                <span class="tooltiptext"><b>Minus one</b></span>
+                                <i class="minus-icon">
+                                    <b>-</b>
+                                </i>
+                            </button>
+                            <span class="count-label">1</span>
+                            <button class="plus-button">
+                                <span class="tooltiptext"><b>Plus one</b></span>
+                                <i class="plus-icon">
+                                    <b>+</b>
+                                </i>
+                            </button>
+                        </div>
+                        <div class="last-buttons">
+                            <button class="buy-button">Куплено
+                                <span class="tooltiptext"><b>Bought</b></span>
+                            </button>
+                            <button class="delete-button">
+                                <span class="tooltiptext"><b>Delete</b></span>
+                                <i class="remove-icon">
+                                    <b>x</b>
+                                </i>
+                            </button>
+                            <button class="unbuy-button">
+                                <span class="tooltiptext"><b>Cancel buying</b></span>
+                                <i class="remove-icon">
+                                    <b>Не куплено</b>
+                                </i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bought-column">
+            <div class="segment-holder">
+                <div class="remain">
+                    <h1>Залишилося</h1>
+                </div>
+                <div class="segment">
+                    <div class="stats">
+                        <span class="stats-label">
+                            <span class="title">Помідори</span>
+                            <span class="count-label2">1</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="bought">
+                    <h1>Куплено</h1>
+                </div>
+                <div class="stats-bought">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---->
+<!---->
+<div class="badge">
+    <span class="name"><b>Buy List</b></span>
+    <div class="creator">Created by <br>Fil Anastasiia</div>
+    </span>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js">
+</script>
+<script type="text/javascript" src="main.js"> </script>
+
+</body>
+</html>
